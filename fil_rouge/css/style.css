@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(64, 64, 64);
+}
+
+
+/*----------------------------HEADER---------------------------*/
+
+.sticky {
+   
+    position: sticky;
+    top: 0;
+    -webkit-box-shadow: 0px 30px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 30px 25px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 30px 25px 0px rgba(0,0,0,0.3); 
+  }
+
+
+header nav {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	background-color:  rgb(122, 122, 122);
+}
+header nav a {
+	padding: 25px;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	            -ms-grid-row-align: center;
+	        align-self: center;
+
+}
+
+header nav a:hover {
+	color: #8ab3fb;
+}
+
+header nav a img{
+	display: block;
+
+}
+/*----------------------------MAIN---------------------------*/
+
+/*-------------------------------------------------INDEX.HTML-----------------------------------------*/
+
+
+
+.sondages{
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+}
+
+h2{
+    
+    padding-top: 2vh;
+    color: #fff;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.sond{
+    margin-top: 5vh ;
+    background-color:  rgb(83, 83, 83);
+    -webkit-box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+}
+
+.image{
+    width: 90%;
+    margin-top: 3vh;
+    
+}
+
+.choix{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reponse {
+    background-color: rgb(106, 106, 106);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.reponse:hover{
+    background-color:  rgb(150, 150, 150);
+}
+
+/*-------------------------------------------------SONDAGE.HTML-----------------------------------------*/
+
+.lesondage{
+    height: 100vh;
+}
+
+.partie{
+    background-color: rgb(83, 83, 83);
+    height: 105vh;
+    width: 80%;
+    margin-top: 5vh;
+    margin-left: 10%;
+    -webkit-box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+}
+
+.partie .image{
+    width: 90%;
+    margin-left: 5%;
+    
+}
+
+.reponses{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.proposition{
+    background-color:  rgb(106, 106, 106);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 50vh;
+    height: 3vh;s
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+.proposition:hover{
+    animation: bounce 1s;
+}
+
+
+
+
+/*-------------------------------------------------CLASSEMENT.HTML-----------------------------------------*/
+
+.leclassement img{
+    width: 80%;
+    margin:5vh 10% 5vh 10%;
+}
+
+.moi{
+    width: 80%;
+    height: 5vh;
+    margin-left: 10%;
+    background-color: rgb(67, 81, 115);
+    text-align: center;
+    display: flex;
+    padding-top: 1.5vh;
+    position: sticky;
+    bottom: 0;
+}
+
+.moi p{
+    display: block;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+}
+
+.leaderboard{
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    background-color: rgb(39, 48, 69);
+    text-align: center;
+    display: flex;
+}
+
+.position{
+    width: 7%;
+    margin-left: 2vh;
+}
+
+.name{
+    width: 43%;
+}
+
+.nombre{
+    width: 25%;
+}
+.score{
+    width: 25%;
+}
+
+ 
+
+
+.leaderboard p{
+    display: block;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    border-top: 1px ridge rgb(23, 28, 41);
+    margin-top: 2vh;
+}
+.name p{
+    margin-left: 5%;
+}
+
+.position p, .nombre p, .score p{
+    text-align: center;
+}
+/*----------------------------FOOTER---------------------------*/
+
+
+.footer {
+    height: 35vh;
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.48);
+}
+
+
+.ligne1 {
+    display: flex;
+    margin-top: 6vh;
+}
+
+.subtitle {
+    font-size: 3vh;
+    margin-left: 15vh;
+    display: flex;
+    color: white;
+    margin-top: 10vh;
+}
+
+.logos {
+    display: flex;
+    margin-left: 20%;
+    justify-content: space-around;
+    margin-top: 10vh;
+    
+}
+
+.lelogo {
+    margin-left: 11vh;
+    height: 32px;
+    filter: invert(100%); 
+    -webkit-filter:invert(100%);
+}
+
+.trait3 {
+    height: 2px;
+    width: 80%;
+    background-color: #dedede;
+    margin-left: 10%;
+    margin-top: 4vh;
+
+}
+
+.phrase {
+    font-size: 2vh;
+    margin-top: 7vh;
+    margin-left: 15vh;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) and (max-width: 682px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /*----------------------------HEADER---------------------------*/
+
+    header nav a img{
+        height: 32px;
+        padding: 0px;
+    
+    }
+    header nav a{
+        padding-left: 20;
+    }
+
+
+    /*----------------------------MAIN---------------------------*/
+
+
+    .sondages{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+/*-------------------------------------------------SONDAGE.HTML-----------------------------------------*/
+
+    .partie{
+        height: 70vh;
+    }
+
+    .lesondage{
+        height: 70vh;
+    }
+    
+    .reponses{
+        margin-top: 5vh;
+        display: flex;
+    }
+
+    /*-------------------------------------------------CLASSEMENT.HTML-----------------------------------------*/
+
+
+    .leaderboard, .moi{
+        width: 100%;
+        margin-left:0;
+    }
+
+   
+
+
+    /*---------------footer----------------*/
+
+
+    .footer {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .subtitle {
+        font-size: 4vh;
+        padding-top: 5vh;
+        text-align: center;
+        height: 7vh;
+        margin-left: 20vh;
+        
+    }
+
+    .ligne1 {
+        margin-top: 6vh;
+        display: block;
+    }
+
+    .logos {
+        justify-content: space-between;
+        margin: 6vh 4vh 7vh 4vh;
+        height: 32px;
+    }
+
+    .lelogo {
+        margin-top: 0;
+        margin-left: 3vh;
+        height: 5vh;
+
+    }
+
+    .phrase {
+        font-size: 2vh;
+        margin-top: 5vh;
+        text-align: center;
+        margin-left: 0;
+        height: 7vh;
+
+    }
+
+}
